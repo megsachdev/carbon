@@ -54,6 +54,7 @@
     "url": "^0.11.0"
   },
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.6.13",
     "all-contributors-cli": "^6.0.0",
     "babel-eslint": "^10.0.1",
     "clipboardy": "^2.0.0",
