@@ -26,7 +26,7 @@ describe('Visual Regression Testing', () => {
   })
 
   it('test display button', () => {
-    cy.get('.bg-select-display').click()
+    cy.get('[data-cy=display]').click()
     cy.eyesCheckWindow({
       tag: 'display button',
       sizeMode: 'selector', //mode
@@ -35,7 +35,7 @@ describe('Visual Regression Testing', () => {
   })
 
   it('test color button', () => {
-    cy.get('.bg-select-display').click()
+    cy.get('[data-cy=display]').click()
     cy.wait(2000)
     cy.get('[title="#50E3C2"]').click()
     cy.wait(500)
