@@ -33,10 +33,11 @@ class BackgroundSelect extends React.PureComponent {
     return (
       <div className="bg-select-container">
         <Button
+          title="Background Menu"
           border
           center
           selected={isVisible}
-          className={`bg-select-display ${isVisible ? 'is-visible' : ''}`}
+          className={`bg-color-container bg-select-display ${isVisible ? 'is-visible' : ''}`}
           onClick={toggleVisibility}
           background="white"
           hoverBackground="white"

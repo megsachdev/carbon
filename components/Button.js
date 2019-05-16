@@ -1,4 +1,5 @@
 import React from 'react'
+import VisuallyHidden from '@reach/visually-hidden'
 
 import { COLORS } from '../lib/constants'
 
@@ -20,7 +21,8 @@ const Button = ({
   style = {},
   flex = 1,
   padding = 0,
-  margin = 0
+  margin = 0,
+  title
 }) => (
   <button
     id={id}
@@ -30,6 +32,7 @@ const Button = ({
     style={style}
     data-cy={cypressElementId}
   >
+    {title && <VisuallyHidden>{title}</VisuallyHidden>}
     {children}
     <style jsx>
       {`
